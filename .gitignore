@@ -1,0 +1,7 @@
+*.orig
+*.pyc
+*.DS_Store
+.pydevproject
+.idea
+.settings/
+node_modules/

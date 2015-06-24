@@ -1,0 +1,22 @@
+{
+  "asi"      : false,
+  "boss"     : false,
+  "browser"  : true,
+  "curly"    : true,
+  "debug"    : false,
+  "devel"    : true,
+  "eqeqeq"   : false,     // Goes to true '==' versus '==='
+  "eqnull"   : false,
+  "evil"     : true,
+  "expr"     : false,
+  "globals"  : {"moment": false},
+  "jquery"   : true,
+  "latedef"  : true,
+  "laxbreak" : false,
+  "loopfunc" : true,
+  "predef"   : ["_global_brand_", "dateFormatSettings", "_", "_base_", "_system_", "_controls_", "_photos_", "_documents_", "google", "moment", "tinyMCE"],
+  "nonbsp"   : true,
+  "undef"    : true,
+  "unused"   : "vars",      // or vars to check only on vars
+  "validthis": true
+}

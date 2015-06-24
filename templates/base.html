@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{# Jinja comment: This is the basic html page that will be loaded #}
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Only basic jquery imported -->
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="/scripts/base.js"></script>
+		<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="/static/main.css" />
+		<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css" media="screen">
+		{%- block script %} {% endblock -%}
+		<title>Garage - {% block title %}{% endblock %}</title>
+	</head>
+	<body>
+		{% block page %} {% endblock %}
+	</body>
+
+</html>
