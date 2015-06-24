@@ -34,9 +34,9 @@ class Garage(BaseModel):
         """
         q = Garage.query()
         if name:
-            q.filter(Garage.name == name)
+            q = q.filter(Garage.name == name)
         elif brand:
-            q.filter(Garage.brand == brand)
+            q = q.filter(Garage.brand == brand)
         if limit:
             return q.fetch(limit)
         return [x for x in q]
